@@ -7,6 +7,9 @@ import Welcome from './components/Welcome';
 import Hello from './components/Hello';
 import Message from './components/Message'
 import Counter from './components/Counter'
+import Counter2 from './components/Counter2';
+import FunctionClick from './components/FunctionClick';
+
 
 
 import Firstcomponent from './components/Firstcomponent';
@@ -16,7 +19,7 @@ function App() {
   return (
     <div className="App">
 
-      <Firstcomponent/>
+      <FunctionClick></FunctionClick>
       {/* <Message></Message> */}
       {/* <Greetings name="Navina" lname="K"></Greetings>
       <Greetings name="Anu" lname="Sudheesh Kumar"></Greetings>

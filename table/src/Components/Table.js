@@ -5,10 +5,7 @@ const Table= props =>{
     const {name,age} = outputdata 
     
     return(
-        <div>
-            <table>
-                
-                <tr>
+        <tr>
                     <td>
                         {name}
                     </td>
@@ -16,9 +13,6 @@ const Table= props =>{
                         {age}
                     </td>
                 </tr>
-                 
-            </table>
-        </div>
     )
 }
 export default Table;

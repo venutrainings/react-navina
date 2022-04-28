@@ -1,0 +1,27 @@
+.h{
+    text-align: center;
+    color: rgb(36, 16, 210);
+    font-family: "Roboto";
+}
+.btn1:hover{
+    background-color: bisque;
+}
+.btn2:hover{
+    background-color: bisque;
+}
+.btn1{
+    background-color: aqua;
+    padding: 15px;
+    font-size: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+.btn2{
+    background-color: aquamarine;
+    padding: 15px;
+    font-size: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}

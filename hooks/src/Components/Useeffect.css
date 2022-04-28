@@ -1,0 +1,28 @@
+tr,td,th{
+    border: 1px solid black;
+}
+
+ .bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+/* .table{
+    width: 70%;
+    align-items: center;
+    border-collapse: collapse;
+    text-align: center;
+
+} */
+
+.btn {
+    background-color: aqua;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+}
