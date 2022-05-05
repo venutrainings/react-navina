@@ -22,9 +22,7 @@ function ComponentC() {
                     <th>
                         title
                     </th>
-                    <th>
-                        completed
-                    </th>
+                    
                 </tr>
             </thead>
             <tbody>

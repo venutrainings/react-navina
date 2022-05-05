@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
 
-      <FunctionClick></FunctionClick>
+      <Counter2></Counter2>
       {/* <Message></Message> */}
       {/* <Greetings name="Navina" lname="K"></Greetings>
       <Greetings name="Anu" lname="Sudheesh Kumar"></Greetings>

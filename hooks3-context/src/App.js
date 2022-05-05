@@ -2,6 +2,7 @@ import React,{ useState,useEffect } from 'react';
 
 import './App.css';
 import ComponentA from './Components/ComponentA';
+import Use from './Components/Use';
 
 export const contextobj=React.createContext()
 
@@ -16,10 +17,7 @@ function App() {
 
   return (
     <div className="App">
-      <contextobj.Provider value={Data}>
-      <p>Fetched data and passing data to componentA</p>
-      <ComponentA/>
-      </contextobj.Provider>
+      <Use />
     </div>
   );
 }

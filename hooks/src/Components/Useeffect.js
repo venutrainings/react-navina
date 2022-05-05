@@ -1,55 +1,57 @@
 import React from 'react'
 import { useState } from 'react'
 import { useEffect } from 'react'
-import "./Useeffect2";
-import Useeffect2 from './Useeffect2';
-import "./Useeffect.css"
+import Useeffect2 from './Useeffect2'
+import './Useeffect.css'
 
 function Useeffect() {
     const [data,setData]=useState([])
-    const [show,setShow]=useState(false)
+    const [state,setState]=useState(false)
+
     useEffect(() => {
         fetch("https://gorest.co.in/public/v2/comments")
-        .then(Response => Response.json())
+        .then(Response=>Response.json())
         .then(jsonData =>setData(jsonData))
-    })
-    const showData=()=>{
-        setShow(true)
+    },[])
+
+    const show=()=>{
+        setState(true)
     }
-    const close=()=>{
-        setShow(false)
+    const hide=()=>{
+        setState(false)
     }
 
   return (
     <div className='bg-container'>
+        <h1 className='h'>Data</h1>
         <div>
-            <button className='btn' onClick={showData}>Show Data</button>
-            <button className='btn' onClick={close}>Close table</button>
+            <button className='btn' onClick={show}>Show table</button>
+            <button className='btn' onClick={hide}>Hide table</button>
         </div>
-        {show && <table >
+        {state && <table>
             <thead>
-                <tr >
+                <tr>
                     <th>
-                        ID
+                        id
                     </th>
                     <th>
-                        POST_ID
+                        post_id
                     </th>
                     <th>
-                        NAME
+                        name
                     </th>
                     <th>
-                        EMAIL
+                        email
                     </th>
                     <th>
-                        BODY
+                        body
                     </th>
                 </tr>
             </thead>
             <tbody>
-            {data.map(eachData =>(
-                <Useeffect2 userDetails={eachData} key = {eachData.id}/>
-            ))}
+                {data.map(eachData => (
+                    <Useeffect2 userdetails={eachData} key={eachData.id}></Useeffect2>
+                ))}
             </tbody>
         </table>}
     </div>

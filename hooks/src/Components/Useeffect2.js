@@ -1,29 +1,28 @@
-
+import React from 'react'
 
 function Useeffect2(props) {
 
-    const {userDetails}=props
-    const {id,post_id,name,email,body}=userDetails;
+        const {userdetails}=props
+        const {id,post_id,name,email,body}=userdetails
+
   return (
-    
-        <tr>
-            <td>
-                {id}
-            </td>
-            <td>
-                {post_id}
-            </td>
-            <td>
-                {name}
-            </td>
-            <td>
-                {email}
-            </td>
-            <td>
-                {body}
-            </td>
-        </tr>
-    
+    <tr>
+        <td>
+            {id}
+        </td>
+        <td>
+            {post_id}
+        </td>
+        <td>
+            {name}
+        </td>
+        <td>
+            {email}
+        </td>
+        <td>
+            {body}
+        </td>
+    </tr>
   )
 }
 

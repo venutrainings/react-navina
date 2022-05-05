@@ -11,7 +11,9 @@ class Counter2 extends Component{
 
 
   increment(prevState){
+    console.log(prevState.count);
     this.setState((prevState) => ({
+      
       count:prevState.count+1
     }))
   }

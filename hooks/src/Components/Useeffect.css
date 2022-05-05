@@ -1,28 +1,26 @@
-tr,td,th{
-    border: 1px solid black;
-}
-
- .bg-container {
+.bg-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-} 
-/* .table{
-    width: 70%;
-    align-items: center;
-    border-collapse: collapse;
-    text-align: center;
-
-} */
-
-.btn {
+}
+.btn.hover{
+    background-color: bisque;
+}
+.btn{
     background-color: aqua;
     color: black;
     border-radius: 5px;
-    border: none;
     margin-right: 10px;
-    width: 100px;
-    height: 30px;
     margin-top: 10px;
+    cursor: pointer;
 }
+.h{
+        text-align: center;
+        color: rgb(36, 16, 210);
+        font-family: "Roboto";
+    }
+
+    .tr,th,td{
+        border: 1px solid black;
+    }
