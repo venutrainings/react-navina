@@ -1,0 +1,19 @@
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.table-container {
+    display: flex;
+    flex-direction: column;
+}
+
+tr,td,th{
+    border: 2px solid black;
+}
