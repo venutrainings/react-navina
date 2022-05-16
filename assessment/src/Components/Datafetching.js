@@ -19,7 +19,7 @@ function Datafetching() {
       
 
     function addData(){
-        axios.post("https://gorest.co.in/public/v2/users",{inputData})
+        axios.post("https://gorest.co.in/public/v2/users",{inputData,headers})
         .then((response)=>setData(response.data));
         
     }
